@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 /// token.t.sol -- test for token.sol
 
 // Copyright (C) 2015, 2016, 2017  DappHub, LLC
@@ -15,7 +17,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.4.23 <0.7.0;
+pragma solidity >=0.6.12 <0.7.0;
 
 import "ds-test/test.sol";
 

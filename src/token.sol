@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 /// token.sol -- ERC20 implementation with minting and burning
 
 // Copyright (C) 2015, 2016, 2017  DappHub, LLC
@@ -15,11 +17,10 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-pragma solidity >=0.4.23 <0.7.0;
+pragma solidity >=0.6.12 <0.7.0;
 
 import "ds-math/math.sol";
 import "ds-auth/auth.sol";
-
 
 contract DSToken is DSMath, DSAuth {
     bool                                              public  stopped;
@@ -29,7 +30,6 @@ contract DSToken is DSMath, DSAuth {
     string                                            public  symbol;
     uint8                                             public  decimals = 18; // standard token precision. override to customize
     string                                            public  name = "";     // Optional token name
-
 
     constructor(string memory symbol_) public {
         symbol = symbol_;
